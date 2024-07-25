@@ -25,8 +25,14 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+
+
+const router = useRouter();
 
 async function onSubmit() {
+  router.push("/dashboard")
+
   console.log("Cheguei aqui")
 }
 </script>
